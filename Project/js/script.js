@@ -30,7 +30,8 @@ function appearance (){
 
 */
 function lock() {
-	$('html, body').animate({scrollTop: $('.major').offset().top}, 800);
+	var win = $(window).height();
+	$('html, body').animate({scrollTop: win}, 800);
 	return false;
 };
 

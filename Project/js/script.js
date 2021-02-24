@@ -2,7 +2,7 @@ window.onload = function() {
 	let btnLock = document.getElementById('btn-lock');
 	let a = document.querySelectorAll('.a')
 function lock() {
-	var win = $(window).height();
+	var win = $(window).height() + 1;
 	$('html, body').animate({scrollTop: win}, 800);
 	return false;
 };

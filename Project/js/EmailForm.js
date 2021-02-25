@@ -6,7 +6,7 @@ $('#sendMail').on('click' , function(){
 
 	const futureCss = document.querySelector('.future-css');
 
-	const future = 'future';
+	const future = 'feature';
 
 	if(future === email){
 		futureCss.classList.add('active');

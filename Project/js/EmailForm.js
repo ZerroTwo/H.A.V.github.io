@@ -15,10 +15,10 @@ $('#sendMail').on('click' , function(){
 
 	if(feature === email){
 		add();
-		setTimeout(remove , 3500);
+		setTimeout(remove , 5000);
 	} else if (feature === name){
 		add();
-		setTimeout(remove , 3500);
+		setTimeout(remove , 5000);
 	} else {
 		console.log('Ты был близок в фиче');
 	};

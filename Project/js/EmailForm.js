@@ -4,7 +4,7 @@ $('#sendMail').on('click' , function(){
 	var message = $('#message').val();
 
 	const featureCss = document.querySelector('.feature-css');
-	feature = 'feature';
+	const feature = 'feature';
 	function add(){
 		featureCss.classList.add('active');
 	};

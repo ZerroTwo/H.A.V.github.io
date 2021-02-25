@@ -377,6 +377,7 @@ main {
 
 
 .future {
+	display: none;
 }
 .future-css.active {
 	display: flex;
@@ -396,9 +397,6 @@ main {
 	color: #fff;
 	font-size: 25px;
 }
-
-
-
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {

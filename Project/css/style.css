@@ -4,8 +4,6 @@
 p , h1 , h2 , span , textarea , input  , a , button , div{
 	font-family: 'Poppins', sans-serif;
 }
-
-
 .wrapper {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -26,8 +24,6 @@ p , h1 , h2 , span , textarea , input  , a , button , div{
 	grid-template-columns: repeat(3, 1fr);
 }
 
-
-
 header {
 	background-color: #000;
 	width: 100%;
@@ -47,12 +43,6 @@ header .wrapper {
 	animation-fill-mode: forwards;
 	animation-timing-function: cubic-bezier(1, 0.05, 1, 1);
 }
-
-
-/*
-.major.active {
-	opacity: 1;
-}*/
 .major h1 {
 	font-family: 'Righteous', cursive;
 	font-size: 108px;
@@ -76,7 +66,6 @@ header .wrapper {
 	        animation-direction:alternate;
 	cursor: pointer;
 }
-
 .arrow {
 	position: relative;
 	width: 25px;
@@ -109,10 +98,6 @@ header .wrapper {
 	-webkit-transform: rotate(-45deg);
 	        transform: rotate(-45deg);
 }
-
-
-
-
 
 main {
 	margin-top: 75px;
@@ -232,9 +217,6 @@ main {
 	font-weight: 600;
 }
 
-
-
-
 .btn-confirm button{
 	font-size: 20px;
 	
@@ -254,16 +236,6 @@ main {
 	background-color:#000;
 	border: 1px solid #000;
 }
-
-
-
-
-
-
-
-
-
-
 
 .btn-style {
 	display: -webkit-box;
@@ -385,9 +357,6 @@ main {
 	animation-direction: normal;
 	animation-fill-mode: forwards;
 }
-@keyframes feature{
-	0%{display: block;transform: translate(-400% , -50%);}100%{display: none;transform: translate(300% , -50%);}}
-
 
 @media (max-width: 480px) {
 	.major h1 {

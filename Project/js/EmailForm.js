@@ -5,7 +5,6 @@ $('#sendMail').on('click' , function(){
 
 	const featureCss = document.querySelector('.feature-css');
 	feature = 'feature';
-	
 	function add(){
 		featureCss.classList.add('active');
 	};
@@ -16,9 +15,11 @@ $('#sendMail').on('click' , function(){
 	if(feature === email){
 		add();
 		setTimeout(remove , 2000);
+		return false;
 	} else if (feature === name){
 		add();
 		setTimeout(remove , 2000);
+		return false;
 	} else {
 		console.log('Ты был близок в фиче');
 	};

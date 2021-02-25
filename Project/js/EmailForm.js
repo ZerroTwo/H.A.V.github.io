@@ -3,26 +3,25 @@ $('#sendMail').on('click' , function(){
 	var name = $('#name').val().trim();
 	var message = $('#message').val();
 
+	const featureCss = document.querySelector('.feature-css');
+	feature = 'feature';
+	
+	function add(){
+		featureCss.classList.add('active');
+	};
+	function remove(){
+		featureCss.classList.remove('active');
+	};
 
-	const futureCss = document.querySelector('.future-css');
-
-	const future = 'feature';
-
-	if(future === email){
-		futureCss.classList.add('active');
-	} else if (future === name){
-		futureCss.classList.add('active');
+	if(feature === email){
+		add();
+		setTimeout(remove , 5000);
+	} else if (feature === name){
+		add();
+		setTimeout(remove , 5000);
 	} else {
 		console.log('Ты был близок в фиче');
 	};
-
-	futureCss.addEventListener('click' , function(){
-		$(this).removeClass('active')
-	})
-
-
-
-
 
 	if (name == '') {
 		$('.btn-name , .btn-email , .type-order').removeClass('error');

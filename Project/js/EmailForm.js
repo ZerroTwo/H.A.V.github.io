@@ -4,6 +4,25 @@ $('#sendMail').on('click' , function(){
 	var message = $('#message').val();
 
 
+	const futureCss = document.querySelector('.future-css');
+
+	const future = 'future';
+
+	if(future === email){
+		futureCss.classList.add('active');
+	} else if (future === name){
+		futureCss.classList.add('active');
+	} else {
+		console.log('Ты был близок в фиче');
+	};
+
+	futureCss.addEventListener('click' , function(){
+		$(this).removeClass('active')
+	})
+
+
+
+
 
 	if (name == '') {
 		$('.btn-name , .btn-email , .type-order').removeClass('error');
@@ -27,13 +46,6 @@ $('#sendMail').on('click' , function(){
 
 	$('#errorMessage').text('');
 
-
-	
-	
-
-
-
-
 	$.ajax({
 		url: 'ajax/mail.php',
 		type: 'POST',
@@ -50,11 +62,6 @@ $('#sendMail').on('click' , function(){
 		 	$('#form').trigger('reset');
 
 			$('#sendMail').prop('disabled',  false);
-		
 		}
 	});
-
 });
-
-	
-

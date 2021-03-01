@@ -6,9 +6,7 @@ function lock() {
 	$('html, body').animate({scrollTop: win}, 800);
 	return false;
 };
-
 btnLock.addEventListener('click' , lock);
-
 function blockButton(){
 	let i = 0;
 	return function e (){
@@ -20,8 +18,5 @@ function blockButton(){
 			i++
 			e();
 		};};};
-
 const blockactive = blockButton();
-blockactive();
-
-}
+blockactive();}

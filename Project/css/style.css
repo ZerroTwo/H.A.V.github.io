@@ -262,7 +262,7 @@ header .wrapper {
 	padding-top: 75px;
 	margin-top: 75px;
 	padding-bottom: 75px;
-	background-color: rgba(0 , 0 , 0 , 0.9);
+	background-color: #000;
 }
 .wrapper.bg .conteiner{
 	width: 100%;

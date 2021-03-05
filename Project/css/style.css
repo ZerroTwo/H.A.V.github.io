@@ -379,3 +379,7 @@ header .wrapper {
 		margin: 0 auto;
 	}
 }
+@media (max-width: 350px) {
+	.major .h1 {
+		font-size: 85px;
+}

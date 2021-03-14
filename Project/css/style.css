@@ -447,7 +447,10 @@ footer .wrapper {
 	font-size: 23px;
 	}
 	.text-transition p{
-	font-size: 35px;
+	font-size: 18px;
+	}
+	.language p{
+	font-size:35px;
 	}
 	.soc-sourse{
 		margin: 0 auto;

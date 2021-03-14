@@ -439,6 +439,15 @@ footer .wrapper {
 	        animation-fill-mode: forwards;
 }
 @media (max-width: 767px) {
+	.text-transition h1{
+	font-size: 50px;
+	}
+	.text-transition h2{
+	font-size: 23px;
+	}
+	.text-transition p{
+	font-size: 18px;
+	}
 	.soc-sourse{
 		margin: 0 auto;
 	}

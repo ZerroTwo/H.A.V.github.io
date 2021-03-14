@@ -1,12 +1,8 @@
 window.onload = function() {
 	let block = document.querySelectorAll('.block');
-	console.log(block);
 	let scene = document.getElementById('scene');
-
 	let parallaxInstance  = new Parallax(scene);
-	
 	var tap = document.getElementsByClassName('tap');
-
 	function scrollWin(x) {
 		var win = (	$(window).height() + 1)* ++x;
 		$('html, body').animate({scrollTop: win}, 800);

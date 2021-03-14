@@ -16,8 +16,6 @@ window.onload = function() {
 		tap[i].parentNode.addEventListener('click' , function(e){
 			scrollWin(i);
 	});};
-
-
 function blockButton(){
 	let i = 0;
 	return function e (){

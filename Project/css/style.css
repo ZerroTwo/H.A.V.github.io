@@ -73,15 +73,6 @@ footer {
 	width: 100%;
 	max-width: 400px;
 }
-.language {
-	display: flex; 
-	justify-content: space-around;
-}
-.language p{
-	margin: 20px 0;
-	font-size: 40px;
-	font-weight: 600;
-}
 .text-transition h1{
 	font-size: 60px;
 	letter-spacing: 4px;
@@ -99,6 +90,15 @@ footer {
 	font-size: 20px;
 	line-height: 30px;
 	letter-spacing: 1px;
+}
+.language {
+	display: flex; 
+	justify-content: space-around;
+}
+.language p{
+	margin: 20px 0;
+	font-size: 40px;
+	font-weight: 600;
 }
 .span {
 	font-weight: 600;

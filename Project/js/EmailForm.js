@@ -2,28 +2,6 @@ $('#sendMail').on('click' , function(){
 	var email = $('#email').val().trim();
 	var name = $('#name').val().trim();
 	var message = $('#message').val();
-
-/*
-	const featureCss = document.querySelector('.feature-css');
-	const feature = 'feature';
-	function add(){
-		featureCss.classList.add('active');
-	};
-	function remove(){
-		featureCss.classList.remove('active');
-	};
-
-	if(feature === email){
-		add();
-		setTimeout(remove , 3000);
-		return false;
-	} else if (feature === name){
-		add();
-		setTimeout(remove , 3000);
-		return false;
-	} else {
-		console.log('Ты был близок в фиче');
-	};*/
 	if (name == '') {
 		$('.btn-name , .btn-email , .type-order').removeClass('error');
 		$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');

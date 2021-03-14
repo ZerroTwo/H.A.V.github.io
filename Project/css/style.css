@@ -30,8 +30,6 @@ footer {
 	left: 0; 
 	height: 100%;
 }
-
-
 .wrapper {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -56,16 +54,12 @@ footer {
 	-ms-grid-columns: (1fr)[3];
 	grid-template-columns: repeat(3, 1fr);
 }
-
-
-
 .main{
 	position: relative;
 	background-color: #fff;
 	min-height: 100%;
 	
 }
-
 .main .wrpapper {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
@@ -125,32 +119,6 @@ footer {
 	font-size: 40px;
 	font-weight: 600;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .major {
 	position: absolute;
@@ -221,9 +189,6 @@ footer {
 	 top: 0;
 	 left: 0;
 }
-
-
-
 
 .branch-one,
 .branch-two {
@@ -493,22 +458,6 @@ footer .wrapper {
 	-webkit-animation-fill-mode: forwards;
 	        animation-fill-mode: forwards;
 }
-/* Large desktops and laptops 
-@media (min-width: 1200px) {
-
-}
-
- Portrait tablets and medium desktops 
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
- Portrait tablets and small desktops 
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-*/
-  
 @media (max-width: 767px) {
 	.soc-sourse{
 		margin: 0 auto;

@@ -5,19 +5,19 @@ $('#sendMail').on('click' , function(){
 	if (name == '') {
 		$('.btn-name , .btn-email , .type-order').removeClass('error');
 		$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');
-		$('#errorMessageName').text('Введите Имя');
+		$('#errorMessageName').text('Enter your name');
 		$('.btn-name').addClass('error');
 		return false;
 	} else if (email == ''){
 		$('.btn-name , .btn-email , .type-order').removeClass('error');
 		$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');
-		$('#errorMessageEmail').text('Введите email');
+		$('#errorMessageEmail').text('Enter your email');
 		$('.btn-email').addClass('error');
 		return false;
 	}	else if (message.length < 10) {
 		$('.btn-name , .btn-email , .type-order').removeClass('error');
 		$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');
-		$('#errorMessageText').text('Введите не менее 10 символов');
+		$('#errorMessageText').text('At least 10 characters');
 		$('.type-order').addClass('error');
 		return false;
 	}
@@ -33,7 +33,7 @@ $('#sendMail').on('click' , function(){
 		},
 		success: function(data){
 			if (!data == false) 
-			alert('Были ошибки, сообщение не отправлено');
+			alert('Error ***');
 		 else 
 		 	$('#form').trigger('reset');
 

@@ -151,6 +151,12 @@ footer {
 	flex-direction: column;
 	overflow: auto;
 }
+
+.myjob{
+	display: flex;
+	justify-content: center;
+}
+
 .myjob h1 {
 	font-size: 60px;
 	letter-spacing: 3px;
@@ -382,18 +388,14 @@ footer .wrapper {
 	.soc-sourse{
 		margin: 0 auto;
 	}
-		.rules {
+	.rules {
 		margin: 10px auto;
-	}
-	.myjob{
-		display: flex;
-		justify-content: center;
 	}
 	.grid {
 		-ms-grid-columns: (1fr)[100];
 		grid-template-columns: repeat(100, 1fr);
 
-}
+	}
 }
 @media (max-width: 480px) {
 	.major h1 {

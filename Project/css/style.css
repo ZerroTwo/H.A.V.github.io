@@ -42,8 +42,8 @@ footer {
 .grid {
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr)[100];
-	grid-template-columns: repeat(100, 1fr);
+	-ms-grid-columns: (1fr)[3];
+	grid-template-columns: repeat(3, 1fr);
 }
 .main{
 	position: relative;
@@ -378,13 +378,22 @@ footer .wrapper {
 	-webkit-animation-fill-mode: forwards;
 	        animation-fill-mode: forwards;
 }
-@media (max-width: 767px) {
+@media (max-width: 769px) {
 	.soc-sourse{
 		margin: 0 auto;
 	}
 		.rules {
 		margin: 10px auto;
 	}
+	.myjob{
+		display: flex;
+		justify-content: center;
+	}
+	.grid {
+		-ms-grid-columns: (1fr)[100];
+		grid-template-columns: repeat(100, 1fr);
+
+}
 }
 @media (max-width: 480px) {
 	.major h1 {

@@ -7,6 +7,7 @@ $('#sendMail').on('click' , function(e){
 
 	
 	function remove(){
+		console.log(1);
 		$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');
 		$('.btn-name , .btn-email , .type-order').removeClass('error');
 	}

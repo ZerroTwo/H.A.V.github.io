@@ -14,6 +14,7 @@ $('#sendMail').on('click' , function(e){
 	
 	/*Проверка ПОЛНАЯ ЕРУНДА, ПРОСТИТЕ )))))*/
 	if (name == '') {
+				console.log(1);
 		remove();
 		$('#errorMessageName').text('Enter your name');
 		$('.btn-name').addClass('error');

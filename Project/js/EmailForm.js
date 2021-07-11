@@ -4,7 +4,7 @@ $('#sendMail').on('click' , function(e){
 	let message = $('#message').val();
 	let flag;
 	$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');
-	
+	/*Проверка ПОЛНАЯ ЕРУНДА, ПРОСТИТЕ )))))*/
 	if (name == '') {
 		$('.btn-name , .btn-email , .type-order').removeClass('error');
 		$('#errorMessageName').text('Enter your name');
@@ -23,8 +23,10 @@ $('#sendMail').on('click' , function(e){
 	} else {
 		flag = true;
 	}
-	console.log(flag);
-	return flag;
+	if(!flag){
+		return flag;
+	}
+	
 	$('#errorMessage').text('');
 	$.ajax({
 		url: 'ajax/mail.php',

@@ -365,25 +365,6 @@ footer .wrapper {
 	margin-left: 16px;
 	height: 12px;
 }
-.feature-css {
- display: none;
-}
-.feature-css.active {
-	display: block;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-400% , -50%);
-	        transform: translate(-400% , -50%);
-	-webkit-animation: feature 3s;
-	        animation: feature 3s;
-	-webkit-animation-timing-function: linear;
-	        animation-timing-function: linear;
-	-webkit-animation-direction: normal;
-	        animation-direction: normal;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
-}
 @media (max-width: 769px) {
 	.soc-sourse{
 		margin: 0 auto;

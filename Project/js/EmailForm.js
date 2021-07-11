@@ -4,8 +4,10 @@ $('#sendMail').on('click' , function(e){
 	let message = $('#message').val();
 	let flag = true;
 	
+	$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');
+	
 	function remove(){
-	$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');	
+		$('.btn-name , .btn-email , .type-order').removeClass('error');
 	}
 	
 	/*Проверка ПОЛНАЯ ЕРУНДА, ПРОСТИТЕ )))))*/

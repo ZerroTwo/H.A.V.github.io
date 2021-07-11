@@ -3,21 +3,26 @@ $('#sendMail').on('click' , function(e){
 	let name = $('#name').val().trim();
 	let message = $('#message').val();
 	let flag = true;
-	$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');
+	
+	function remove(){
+	$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');	
+	}
+	
 	/*Проверка ПОЛНАЯ ЕРУНДА, ПРОСТИТЕ )))))*/
 	if (name == '') {
-		$('.btn-name , .btn-email , .type-order').removeClass('error');
+		remove();
 		$('#errorMessageName').text('Enter your name');
 		$('.btn-name').addClass('error');
 	} else if (email == ''){
-		$('.btn-name , .btn-email , .type-order').removeClass('error');
+		remove();
 		$('#errorMessageEmail').text('Enter your email');
 		$('.btn-email').addClass('error');
 	}	else if (message.length < 10) {
-		$('.btn-name , .btn-email , .type-order').removeClass('error');
+		remove();
 		$('#errorMessageText').text('At least 10 characters');
 		$('.type-order').addClass('error');
 	} else {
+		remove();
 		flag = false;
 	}
 	if(flag){

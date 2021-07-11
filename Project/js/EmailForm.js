@@ -2,29 +2,26 @@ $('#sendMail').on('click' , function(e){
 	let email = $('#email').val().trim();
 	let name = $('#name').val().trim();
 	let message = $('#message').val();
-	let flag;
+	let flag = true;
 	$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');
 	/*Проверка ПОЛНАЯ ЕРУНДА, ПРОСТИТЕ )))))*/
 	if (name == '') {
 		$('.btn-name , .btn-email , .type-order').removeClass('error');
 		$('#errorMessageName').text('Enter your name');
 		$('.btn-name').addClass('error');
-		flag = false;
 	} else if (email == ''){
 		$('.btn-name , .btn-email , .type-order').removeClass('error');
 		$('#errorMessageEmail').text('Enter your email');
 		$('.btn-email').addClass('error');
-		flag = false;
 	}	else if (message.length < 10) {
 		$('.btn-name , .btn-email , .type-order').removeClass('error');
 		$('#errorMessageText').text('At least 10 characters');
 		$('.type-order').addClass('error');
-		flag = false;
 	} else {
-		flag = true;
+		flag = false;
 	}
-	if(!flag){
-		return flag;
+	if(flag){
+		return ;
 	}
 	
 	$('#errorMessage').text('');

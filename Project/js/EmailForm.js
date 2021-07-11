@@ -23,6 +23,7 @@ $('#sendMail').on('click' , function(e){
 	} else {
 		flag = true;
 	}
+	console.log(flag);
 	return flag;
 	$('#errorMessage').text('');
 	$.ajax({

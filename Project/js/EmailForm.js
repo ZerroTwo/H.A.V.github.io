@@ -1,25 +1,25 @@
-$('#sendMail').on('click' , function(){
+$('#sendMail').on('click' , function(e){
 	var email = $('#email').val().trim();
 	var name = $('#name').val().trim();
 	var message = $('#message').val();
+	
+	$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');
+	
 	if (name == '') {
 		$('.btn-name , .btn-email , .type-order').removeClass('error');
-		$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');
 		$('#errorMessageName').text('Enter your name');
 		$('.btn-name').addClass('error');
-		return false;
+		e.preventDefault();
 	} else if (email == ''){
 		$('.btn-name , .btn-email , .type-order').removeClass('error');
-		$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');
 		$('#errorMessageEmail').text('Enter your email');
 		$('.btn-email').addClass('error');
-		return false;
+		e.preventDefault();
 	}	else if (message.length < 10) {
 		$('.btn-name , .btn-email , .type-order').removeClass('error');
-		$('#errorMessageName , #errorMessageEmail , #errorMessageText').html('');
 		$('#errorMessageText').text('At least 10 characters');
 		$('.type-order').addClass('error');
-		return false;
+		e.preventDefault();
 	}
 	$('#errorMessage').text('');
 	$.ajax({

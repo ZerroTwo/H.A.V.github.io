@@ -4,7 +4,7 @@ p , h1 , h2 , span , textarea , input  , a , button , div{
 	font-family: 'Poppins', sans-serif;
 }
 ::-webkit-scrollbar { /* chrome based */
-    width: 0px;  /* ширина scrollbar'a */
+    width: 1px;  /* ширина scrollbar'a */
     background: transparent;  /* опционально */
 }
 
@@ -39,8 +39,8 @@ footer {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	margin: 0 auto;
 	padding: 20px 5px 40px;
 	text-align: center;
@@ -209,14 +209,17 @@ footer {
 	width: 250px;
 }
 .transition-project {
+	text-align: justify;
 	overflow: auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	margin: 5px auto;
 	max-width: 250px;
-	height: 153px;
+	height: 100%;
+	max-height: 134px;
 	line-height: 20px;
+	font-size: 14px;
 }
 .buttun-project {
 	margin: 20px 0 10px;

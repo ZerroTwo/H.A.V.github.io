@@ -3,6 +3,15 @@
 p , h1 , h2 , span , textarea , input  , a , button , div{
 	font-family: 'Poppins', sans-serif;
 }
+::-webkit-scrollbar { /* chrome based */
+    width: 1px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
+
+html {
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+}
 header{
 	background-color: #000;
 	width: 100%;
@@ -178,6 +187,8 @@ footer {
 	padding: 10px;
 	border: 1px solid #8888;
 	border-radius: 7px;
+	display: flex;
+	flex-direction: column;
 }
 .conteiner.hover {
 	opacity: 0.7;
@@ -198,11 +209,13 @@ footer {
 	width: 250px;
 }
 .transition-project {
+	overflow: auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	margin: 5px auto;
 	max-width: 250px;
+	height: 153px;
 	line-height: 20px;
 }
 .buttun-project {

@@ -4,7 +4,7 @@ p , h1 , h2 , span , textarea , input  , a , button , div{
 	font-family: 'Poppins', sans-serif;
 }
 ::-webkit-scrollbar { /* chrome based */
-    width: 1px;  /* ширина scrollbar'a */
+    width: 0px;  /* ширина scrollbar'a */
     background: transparent;  /* опционально */
 }
 

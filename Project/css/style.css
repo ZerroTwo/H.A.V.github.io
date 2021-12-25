@@ -203,6 +203,7 @@ footer {
 	font-family: 'Righteous', cursive;
 	margin: 10px 0;
 	font-size: 32px;
+	text-transform: uppercase;
 }
 .img-project img {
 	margin: 10px 0;
